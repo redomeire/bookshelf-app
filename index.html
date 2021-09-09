@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>Bookshelf App</h1>
+            <p>Halo, Selamat datang di aplikasi rak buku!</p>
+            <button class="btn1"><a href="#mulai">Roll Now</a></button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="input-container">
+                <h2 id="mulai">Silakan mengisi form</h2>
+                <form class="form1" action="#" id="form">
+                    <div class="bookTitle">
+                        <label for="title">
+                            <h3>Judul</h3>
+                        </label>
+                        <input type="text" id="judul" name="title" required>
+                    </div>
+
+                    <div class="bookCreator">
+                        <label for="creator">
+                            <h3>Penulis</h3>
+                        </label>
+                        <input type="text" id="creator" name="creator" required>
+                    </div>
+
+                    <div class="bookYear">
+                        <label for="year">
+                            <h3>Tahun</h3>
+                        </label>
+                        <input type="text" id="year" name="year" required>
+                    </div>
+
+                    <div class="button-container">
+                        <input type="submit" value="Masukkan" name="Submit" class="btn2">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="search-container">
+                <form class="form2" id="searchForm" action="#">
+                    <label for="search">
+                        <h3>Find Your Book(s)</h3>
+                        <input type="text" name="search" id="searchInput">
+                    </label>
+                    <div class="test">
+                        <p>*Case sensitive</p>
+                        <input type="submit" value="Search" name="Search" class="btn2 right-corner-bottom"
+                            id="searchButton">
+                        </input>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="belum-container">
+                <div class="hasil" id="belumSelesai">
+                    <h2>Belum Selesai Dibaca</h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="sudah-container">
+                <div class="hasil" id="sudahSelesai">
+                    <h2>Sudah selesai dibaca</h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="custom" id="custom" hidden>
+                <div class="dialogContainer">
+                    <div class="customDialog">
+                        <div class="uppercard">
+                            <h2>Selamat!!</h2>
+                        </div>
+                        <p>Buku telah terhapus.<br>Tekan "done" untuk melanjutkan</p>
+                        <button class="btn2" id="done">Done</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tampungStorage">
+            <h2 id="storage"></h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
